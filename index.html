@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BlogWeb</title>
+    <link rel="stylesheet" href="main.css" />
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a class="nav-link" href="#">Home</a>
+        <a class="nav-link" href="#">About</a>
+        <div class="dropdown">
+          <div tabindex="0" role="button" class="btn m-1">
+            Mood
+            <svg
+              width="12px"
+              height="12px"
+              class="inline-block h-2 w-2 fill-current opacity-60"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 2048 2048">
+              <path d="M1799 349l242 241-1017 1017L7 590l242-241 775 775 775-775z"></path>
+            </svg>
+          </div>
+          <ul tabindex="0" class="dropdown-content bg-base-300 rounded-box z-[1] w-52 p-2 shadow-2xl">
+            <li>
+              <input
+                type="radio"
+                name="theme-dropdown"
+                class="theme-controller btn btn-sm btn-block btn-ghost justify-start"
+                aria-label="Default"
+                value="default" />
+            </li>
+            <li>
+              <input
+                type="radio"
+                name="theme-dropdown"
+                class="theme-controller btn btn-sm btn-block btn-ghost justify-start"
+                aria-label="Retro"
+                value="retro" />
+            </li>
+            <li>
+              <input
+                type="radio"
+                name="theme-dropdown"
+                class="theme-controller btn btn-sm btn-block btn-ghost justify-start"
+                aria-label="Old"
+                value="dim" />
+            </li>
+            <li>
+              <input
+                type="radio"
+                name="theme-dropdown"
+                class="theme-controller btn btn-sm btn-block btn-ghost justify-start"
+                aria-label="Valentine"
+                value="valentine" />
+            </li>
+            <li>
+              <input
+                type="radio"
+                name="theme-dropdown"
+                class="theme-controller btn btn-sm btn-block btn-ghost justify-start"
+                aria-label="Dark-green"
+                value="forest" />
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <div class="hero">
+      <div class="hero min-h-screen">
+        <div class="hero-content text-center">
+          <div class="max-w-md">
+              <h1 class="typing-container" id="typingText"></h1>
+            <h3 class="text-5xl font-bold">Awig Awig</h3>
+            <h3 class="py-6">
+              Disini saya dan Team saya membuat Tugas agama yang berisi tentang
+              aturan di banjar (AWIG-AWIG).          Ada Quiz nya juga Loh Bagi yang pintar saja.
+            </h3>
+            <button class="btn btn-primary">Quizz</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="img">
+      <img src="/aset/cloud.png" alt="cloud">
+    </div>
+    <div class="chat">
+      <div class="artboard artboard-horizontal phone-1">
+        <div class="chat chat-start 1">
+          <div class="chat-bubble">
+            Hei aku mau bertanya,
+            <br />
+            apa itu awig awig?.
+          </div>
+        </div>
+        <div class="chat chat-end 2">
+          <div class="chat-bubble">Oh haii, jadi awig awig itu adalah !
+            <br />
+            aturan aturan yang ada di banjar 
+          </div>
+        </div>
+        <div class="chat chat-start 3">
+          <div class="chat-bubble">Owh jadi gitu.</div>
+        </div>
+        <div class="chat chat-end 4">
+          <div class="chat-bubble">Iya kalo mau tau selanjut nya scrol aja!</div>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="img-2">
+      <img src="/aset/patung.png" alt="patung">
+    </div> -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
