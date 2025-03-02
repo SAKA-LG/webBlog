@@ -6,6 +6,7 @@
     <title>BlogWeb</title>
     <link rel="stylesheet" href="main.css" />
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
   </head>
   <body>
     <header>
@@ -38,8 +39,8 @@
                 type="radio"
                 name="theme-dropdown"
                 class="theme-controller btn btn-sm btn-block btn-ghost justify-start"
-                aria-label="Retro"
-                value="retro" />
+                aria-label="Natural"
+                value="garden" />
             </li>
             <li>
               <input
@@ -54,8 +55,8 @@
                 type="radio"
                 name="theme-dropdown"
                 class="theme-controller btn btn-sm btn-block btn-ghost justify-start"
-                aria-label="Valentine"
-                value="valentine" />
+                aria-label="halloween"
+                value="halloween" />
             </li>
             <li>
               <input
@@ -74,45 +75,62 @@
         <div class="hero-content text-center">
           <div class="max-w-md">
               <h1 class="typing-container" id="typingText"></h1>
-            <h3 class="text-5xl font-bold">Awig Awig</h3>
+            <h3 class="text-5xl font-bold">Awig awig</h3>
             <h3 class="py-6">
               Disini saya dan Team saya membuat Tugas agama yang berisi tentang
               aturan di banjar (AWIG-AWIG).          Ada Quiz nya juga Loh Bagi yang pintar saja.
             </h3>
-            <button class="btn btn-primary">Quizz</button>
+            <button class="btn btn-primary hover:shadow-2xl hover:rotate-3 transition-all">Quizz</button>
           </div>
         </div>
       </div>
     </div>
+    <div class="paper-plane">
+      <img src="/aset/plane.png" alt="paperPlane">
+    </div>
     <div class="img">
-      <img src="/webBlog/aset/cloud.png" alt="cloud">
+      <img src="/aset/cloud.png" alt="cloud"> <!--todo /webBlog/aset/cloud.png -->
     </div>
     <div class="chat">
-      <div class="artboard artboard-horizontal phone-1">
-        <div class="chat chat-start 1">
+        <div class="chat chat-start 1 ">
           <div class="chat-bubble">
-            Hei aku mau bertanya,
-            <br />
-            apa itu awig awig?.
-          </div>
-        </div>
-        <div class="chat chat-end 2">
-          <div class="chat-bubble">Oh haii, jadi awig awig itu adalah !
+            Oh haii, jadi Awig awig itu adalah !
             <br />
             aturan aturan yang ada di banjar 
           </div>
         </div>
-        <div class="chat chat-start 3">
-          <div class="chat-bubble">Owh jadi gitu.</div>
+        <div class="chat chat-end 2">
+          <div class="chat-bubble">Hei aku mau bertanya,
+            <br />
+            apa itu awig-awig?.
+          </div>
         </div>
-        <div class="chat chat-end 4">
+        <div class="chat chat-start 3">
           <div class="chat-bubble">Iya kalo mau tau selanjut nya scrol aja!</div>
         </div>
+        <div class="chat chat-end 4">
+          <div class="chat-bubble">Owh jadi gitu.</div>
+        </div>
       </div>
-    </div>
-    <!-- <div class="img-2">
-      <img src="/aset/patung.png" alt="patung">
-    </div> -->
+      <div class="img2">
+        <img src="/aset/cloud2.png" alt="cloud"> <!--todo /webBlog/aset/cloud.png -->
+      </div>
+      <div data-aos="fade-down" class="content-info">
+      <h2 class="font-card">Kami mendapatkan Materi</h2>
+      <span class="text-success info-card">
+      <h1>Dari sumber yang terpercaya.</h1>
+      <h2>Mengunakan <span class="text-bold-white">class name</span></h2>
+      <h2 class="text-bold">
+        Semantic CSS.</h2>
+      </span>
+      <div class="cool-face">
+        <img loading="lazy" src="https://img.daisyui.com/images/emoji/smiling-face-with-sunglasses.webp" alt="face-cool">
+      </div>
+    </div> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="main.js"></script>
   </body>

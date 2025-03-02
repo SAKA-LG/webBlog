@@ -4,6 +4,13 @@
   font-weight: normal;
   font-style: normal;
 }
+
+@font-face {
+  font-family: "Poppins";
+  src: url("fonts/Poppins-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
 * {
   margin: 0;
   padding: 0;
@@ -40,7 +47,7 @@ nav a:hover {
   0% {
     transform: translateY(-20px);
     opacity: 0;
-}
+  }
   100% {
     opacity: 1;
   }
@@ -55,8 +62,8 @@ nav a:hover {
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  animation: typing 3s ;
-  -webkit-animation: typing 3s ;
+  animation: typing 3s;
+  -webkit-animation: typing 3s;
 }
 
 @keyframes typing {
@@ -75,20 +82,21 @@ nav a:hover {
 }
 
 @keyframes up {
-  0%{
+  0% {
     transform: translateY(20px);
     opacity: 0;
-}100%{
+  }
+  100% {
     transform: translateY(0);
     opacity: 1;
     -webkit-transform: translateY(0);
     -moz-transform: translateY(0);
     -ms-transform: translateY(0);
     -o-transform: translateY(0);
-}  
+  }
 }
 
-.img{
+.img {
   position: absolute;
   width: 40%;
   margin-top: -17%;
@@ -97,55 +105,59 @@ nav a:hover {
 }
 
 @keyframes cloudEfect {
-  0%{
+  0% {
     opacity: 0;
-  }20%{
+  }
+  20% {
     transform: translateX(20px);
     opacity: 0.5;
     -webkit-transform: translateX(20px);
     -moz-transform: translateX(20px);
     -ms-transform: translateX(20px);
     -o-transform: translateX(20px);
-}40%{
+  }
+  40% {
     transform: translateX(30px);
     opacity: 0.5;
     -webkit-transform: translateX(30px);
     -moz-transform: translateX(30px);
     -ms-transform: translateX(30px);
     -o-transform: translateX(30px);
-}60%{
+  }
+  60% {
     transform: translateX(0);
     opacity: 0.5;
-}80%{
+  }
+  80% {
     transform: translateX(30px);
     opacity: 0.5;
     -webkit-transform: translateX(30px);
     -moz-transform: translateX(30px);
     -ms-transform: translateX(30px);
     -o-transform: translateX(30px);
-}100%{
+  }
+  100% {
     transform: translateX(0px);
     opacity: 0;
-
-}
+  }
 }
 
 @keyframes slideR {
-  0%{
+  0% {
     transform: translateZ(50px);
     opacity: 0.5;
     -webkit-transform: translateZ(50px);
     -moz-transform: translateZ(50px);
     -ms-transform: translateZ(50px);
     -o-transform: translateZ(50px);
-}100%
-  {
+  }
+  100% {
     transform: translateX(0);
     opacity: 0.6;
   }
 }
 
-.img-2{
+.img-2 {
   opacity: 0.5;
   overflow: hidden;
   margin-left: 60%;
@@ -155,40 +167,142 @@ nav a:hover {
 }
 
 @keyframes Buble {
-  0%{
-    opacity: 0.5;
-  }20%{
-    transform: translateY(20px);
-    opacity: 0.5;
-    -webkit-transform: translateY(20px);
-    -moz-transform: translateY(20px);
-    -ms-transform: translateY(20px);
-    -o-transform: translateY(20px);
-}40%{
+  0% {
+    opacity: 0;
+  }
+  20% {
+    transform: translateY(27px);
+    opacity: 0;
+    -webkit-transform: translateY(27px);
+    -moz-transform: translateY(27px);
+    -ms-transform: translateY(27px);
+    -o-transform: translateY(27px);
+}
+  40% {
     transform: translateY(0);
     opacity: 0.5;
     -webkit-transform: translateY(0);
     -moz-transform: translateY(0);
     -ms-transform: translateY(0);
     -o-transform: translateY(0);
-}60%{
-    transform: translateY(-20);
+  }
+  60% {
+    transform: translateY(-27px);
     opacity: 0.5;
-    -webkit-transform: translateY(-20);
-    -moz-transform: translateY(-20);
-    -ms-transform: translateY(-20);
-    -o-transform: translateY(-20);
-}100%{
+    -webkit-transform: translateY(-27px);
+    -moz-transform: translateY(-27px);
+    -ms-transform: translateY(-27px);
+    -o-transform: translateY(-27px);
+}
+  100% {
     transform: translateY(0px);
-    opacity: 0.5;
+    opacity: 0;
     -webkit-transform: translateY(0px);
     -moz-transform: translateY(0px);
     -ms-transform: translateY(0px);
     -o-transform: translateY(0px);
-}
+  }
 }
 
 .chat {
   animation: up 10s ease-in-out;
   -webkit-animation: up 10s ease-in-out;
+  padding-left: 15%;
+  padding-right: 15%;
+  height: 40%;
+}
+
+body.loaded .gradient-text {
+  visibility: visible;
+}
+
+.img2{
+  display: flex;
+  justify-self: end;
+  justify-content: end;
+  align-items: end;
+  align-self: end;
+  opacity: 0.5;
+  width: 40%;
+  animation: Bubble 10s infinite;
+  -webkit-animation: Buble 10s infinite;
+}
+
+.paper-plane{
+  position: absolute;
+  opacity: 0;
+  width: 100px;
+  height: 100vh;
+  transform: scaleX(-1);
+  animation: plane-rute 20s infinite;
+  -webkit-animation: plane-rute 20s infinite;
+}
+
+@keyframes plane-rute{
+  0%{
+    opacity: 0;
+}
+  20%{
+    opacity: 1;
+    margin-left: 40%;
+  }
+  40%{
+    opacity: 1;
+    margin-top: -50%;
+    transform: scaleX(1);
+    transform: rotate(40deg);
+    -webkit-transform: rotate(40deg);
+    -moz-transform: rotate(40deg);
+    -ms-transform: rotate(40deg);
+    -o-transform: rotate(40deg);
+    transform: rotate(360deg);
+}
+  60% {
+    opacity: 1;
+    margin-left: -100%;
+    transform: scaleX(1);
+}
+}
+.content-info {
+  align-self: center;
+  justify-self: center;
+  margin-top: 70px;
+}
+
+.info-card {
+  font-size: 40px;
+}
+
+.font-card {
+  font-size: 50px;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+}
+
+.cool-face {
+  position: absolute;
+  width: 75px;
+  height: 75vh;
+  justify-self: center;
+  align-self: center;
+  margin-left: 55%;
+  margin-top: -10%;
+}
+
+.text-bold{
+  font-size: 50px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+}
+
+.text-bold-white {
+  color: white;
+  font-size: 50px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+}
+
+.glowEfect {
+  text-shadow: 0 0 5px #22C55E, 0 0 5px white;
 }
