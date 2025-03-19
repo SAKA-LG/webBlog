@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuizzKu Hard</title>
+    <link rel="icon" type="image/png" href="/aset/kq.png"/>
+    <link rel="stylesheet" href="app-main-quiz.css">
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="app.css" />
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+</head>
+<body>
+    <header>
+        <nav class="container-self">
+          <ul>
+            <a class="btn" href="quiz.html" >Quiz</a>
+            <a class="btn" href="index.html">Home</a>
+            <div class="dropdown mood">
+              <div tabindex="0" role="button" class="btn m-1">
+                Mood
+                <svg
+                  width="12px"
+                  height="12px"
+                  class="inline-block h-2 w-2 fill-current opacity-60"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 2048 2048">
+                  <path d="M1799 349l242 241-1017 1017L7 590l242-241 775 775 775-775z"></path>
+                </svg>
+              </div>
+              <ul tabindex="0" class="dropdown-content bg-base-300 rounded-box z-[1] w-52 p-2 shadow-2xl">
+                <li>
+                  <input
+                    type="radio"
+                    name="theme-dropdown"
+                    class="theme-controller btn btn-sm btn-block btn-ghost justify-start"
+                    aria-label="Default"
+                    value="default" />
+                </li>
+                <li>
+                  <input
+                    type="radio"
+                    name="theme-dropdown"
+                    class="theme-controller btn btn-sm btn-block btn-ghost justify-start"
+                    aria-label="Natural"
+                    value="garden" />
+                </li>
+                <li>
+                  <input
+                    type="radio"
+                    name="theme-dropdown"
+                    class="theme-controller btn btn-sm btn-block btn-ghost justify-start"
+                    aria-label="Old"
+                    value="dim" />
+                </li>
+                <li>
+                  <input
+                    type="radio"
+                    name="theme-dropdown"
+                    class="theme-controller btn btn-sm btn-block btn-ghost justify-start"
+                    aria-label="halloween"
+                    value="halloween" />
+                </li>
+                <li>
+                  <input
+                    type="radio"
+                    name="theme-dropdown"
+                    class="theme-controller btn btn-sm btn-block btn-ghost justify-start"
+                    aria-label="Dark-green"
+                    value="forest" />
+                </li>
+              </ul>
+            </div>
+          </div>
+          </ul>
+        </nav>
+        <div class="navMedia">
+        <div class="drawer">
+          <input id="my-drawer" type="checkbox" class="drawer-toggle" />
+          <div class="drawer-content">
+            <label for="my-drawer" class="btn  drawer-button"
+              ><div class="hamburger-menu" id="hamburgerMenu">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+              </div></label>
+          </div>
+          <div class="drawer-side">
+            <label
+              for="my-drawer"
+              aria-label="close sidebar"
+              class="drawer-overlay"
+            ></label>
+            <ul class="menu bg-base-200 text-base-content min-h-full w-80 p-4">
+                <li><a href="quiz.html">Quiz</a></li>
+                <li><a href="index.html">Home</a></li>
+            </ul>
+          </div>
+        </div>
+    </div>
+    </header>
+    <h1 class="quizku">Welcome To QuizKu</h1>
+    <p id="soal-hard" class="soal"></p>
+    <div class="emoji">
+    <img loading="lazy" src="https://img.daisyui.com/images/emoji/smiling-face-with-sunglasses.webp" alt="face-cool">
+    </div>
+    <div class="input">
+    <input id="jawaban-hard" type="text" placeholder="Ketik disini" />
+    <button onclick="nextHad()" class="btn btn-success">-></button>
+    <h1 id="hasil-hard" class="hasil"></h1>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+    AOS.init();
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="app-main-quiz.js"></script>
+</body>
+</html>

@@ -1,6 +1,6 @@
 const texts = [
   "Selamat Datang User!",
-  "Ini tugas Agama Hindhu",
+  "tugas Agama Hindhu",
   "Tentang Awig Awig!",
 ];
 let textIndex = 0;
@@ -37,5 +37,16 @@ function typeEffect() {
 }
 
 typeEffect();
+
+document.addEventListener('DOMContentLoaded', function () {
+  const hamburgerMenu = document.getElementById('hamburgerMenu');
+  const navLinks = document.getElementById('navLinks');
+
+
+  hamburgerMenu.addEventListener('click', function () {
+    navLinks.classList.toggle('active');
+    this.style 
+  });
+});
 
 

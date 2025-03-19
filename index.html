@@ -3,70 +3,97 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>BlogWeb</title>
+    <title>Go</title>
+    <link rel="icon" type="image/png" href="/aset/g.png">
     <link rel="stylesheet" href="main.css" />
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    />
+    
   </head>
   <body>
     <header>
       <nav>
-        <a class="nav-link" href="#">Home</a>
-        <a class="nav-link" href="#">About</a>
-        <div class="dropdown">
-          <div tabindex="0" role="button" class="btn m-1">
-            Mood
-            <svg
-              width="12px"
-              height="12px"
-              class="inline-block h-2 w-2 fill-current opacity-60"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 2048 2048">
-              <path d="M1799 349l242 241-1017 1017L7 590l242-241 775 775 775-775z"></path>
-            </svg>
+        <div class="hamburger-menu" id="hamburgerMenu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="nav-links" id="navLinks">
+          <a class="nav-link" href="#">Home</a>
+          <a class="nav-link" href="#">About</a>
+          <div class="dropdown mood">
+            <div tabindex="0" role="button" class="btn m-1">
+              Mood
+              <svg
+                width="12px"
+                height="12px"
+                class="inline-block h-2 w-2 fill-current opacity-60"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 2048 2048"
+              >
+                <path
+                  d="M1799 349l242 241-1017 1017L7 590l242-241 775 775 775-775z"
+                ></path>
+              </svg>
+            </div>
+            <ul
+              tabindex="0"
+              class="dropdown-content bg-base-300 rounded-box z-[1] w-52 p-2 shadow-2xl"
+            >
+              <li>
+                <input
+                  type="radio"
+                  name="theme-dropdown"
+                  class="theme-controller btn btn-sm btn-block btn-ghost justify-start"
+                  aria-label="Default"
+                  value="default"
+                />
+              </li>
+              <li>
+                <input
+                  type="radio"
+                  name="theme-dropdown"
+                  class="theme-controller btn btn-sm btn-block btn-ghost justify-start"
+                  aria-label="Natural"
+                  value="garden"
+                />
+              </li>
+              <li>
+                <input
+                  type="radio"
+                  name="theme-dropdown"
+                  class="theme-controller btn btn-sm btn-block btn-ghost justify-start"
+                  aria-label="Old"
+                  value="dim"
+                />
+              </li>
+              <li>
+                <input
+                  type="radio"
+                  name="theme-dropdown"
+                  class="theme-controller btn btn-sm btn-block btn-ghost justify-start"
+                  aria-label="halloween"
+                  value="halloween"
+                />
+              </li>
+              <li>
+                <input
+                  type="radio"
+                  name="theme-dropdown"
+                  class="theme-controller btn btn-sm btn-block btn-ghost justify-start"
+                  aria-label="Dark-green"
+                  value="forest"
+                />
+              </li>
+            </ul>
           </div>
-          <ul tabindex="0" class="dropdown-content bg-base-300 rounded-box z-[1] w-52 p-2 shadow-2xl">
-            <li>
-              <input
-                type="radio"
-                name="theme-dropdown"
-                class="theme-controller btn btn-sm btn-block btn-ghost justify-start"
-                aria-label="Default"
-                value="default" />
-            </li>
-            <li>
-              <input
-                type="radio"
-                name="theme-dropdown"
-                class="theme-controller btn btn-sm btn-block btn-ghost justify-start"
-                aria-label="Natural"
-                value="garden" />
-            </li>
-            <li>
-              <input
-                type="radio"
-                name="theme-dropdown"
-                class="theme-controller btn btn-sm btn-block btn-ghost justify-start"
-                aria-label="Old"
-                value="dim" />
-            </li>
-            <li>
-              <input
-                type="radio"
-                name="theme-dropdown"
-                class="theme-controller btn btn-sm btn-block btn-ghost justify-start"
-                aria-label="halloween"
-                value="halloween" />
-            </li>
-            <li>
-              <input
-                type="radio"
-                name="theme-dropdown"
-                class="theme-controller btn btn-sm btn-block btn-ghost justify-start"
-                aria-label="Dark-green"
-                value="forest" />
-            </li>
-          </ul>
         </div>
       </nav>
     </header>
@@ -74,59 +101,186 @@
       <div class="hero min-h-screen">
         <div class="hero-content text-center">
           <div class="max-w-md">
-              <h1 class="typing-container" id="typingText"></h1>
+            <h1 class="typing-container" id="typingText"></h1>
             <h3 class="text-5xl font-bold">Awig awig</h3>
             <h3 class="py-6">
               Disini saya dan Team saya membuat Tugas agama yang berisi tentang
-              aturan di banjar (AWIG-AWIG).          Ada Quiz nya juga Loh Bagi yang pintar saja.
+              aturan di banjar (AWIG-AWIG). Ada Quiz nya juga Loh Bagi yang
+              pintar saja.
             </h3>
-            <button class="btn btn-primary hover:shadow-2xl hover:rotate-3 transition-all">Quizz</button>
+            <a
+              class="btn btn-primary hover:shadow-2xl hover:rotate-3 transition-all"
+              href="quiz.html"
+              >Quiz</a
+            >
           </div>
         </div>
       </div>
     </div>
     <div class="paper-plane">
-      <img src="/webBlog/aset/plane.png" alt="paperPlane">
+      <img src="/aset/plane.png" alt="paperPlane" />
+      <!--todo /webBlog/aset/plane.png-->
     </div>
     <div class="img">
-      <img src="/webBlog/aset/cloud.png" alt="cloud"> <!--todo /webBlog/aset/cloud.png -->
+      <img src="/aset/cloud.png" alt="cloud" />
+      <!--todo /webBlog/aset/cloud.png -->
     </div>
     <div class="chat">
-        <div class="chat chat-start 1 ">
-          <div class="chat-bubble">
-            Oh haii, jadi Awig awig itu adalah !
-            <br />
-            aturan aturan yang ada di banjar 
-          </div>
-        </div>
-        <div class="chat chat-end 2">
-          <div class="chat-bubble">Hei aku mau bertanya,
-            <br />
-            apa itu awig-awig?.
-          </div>
-        </div>
-        <div class="chat chat-start 3">
-          <div class="chat-bubble">Iya kalo mau tau selanjut nya scrol aja!</div>
-        </div>
-        <div class="chat chat-end 4">
-          <div class="chat-bubble">Owh jadi gitu.</div>
+      <div class="chat chat-start 1">
+        <div class="chat-bubble margin-chat">
+          Oh haii, Awig awig itu!
+          <br />
+          aturan aturan yang ada di banjar
         </div>
       </div>
-      <div class="img2">
-        <img src="/webBlog/aset/cloud2.png" alt="cloud"> <!--todo /webBlog/aset/cloud.png -->
+      <div class="chat chat-end margin-chat">
+        <div class="chat-bubble">
+          Hei,aku ingin bertanya
+          <br />
+          apa itu awig awig?.
+        </div>
       </div>
-      <div data-aos="fade-up" data-aos-offset="200" class="content-info">
+      <div class="chat chat-start margin-chat">
+        <div class="chat-bubble">kalo mau tau selanjut nya scrol aja!</div>
+      </div>
+      <div class="chat chat-end margin-chat">
+        <div class="chat-bubble">Owh jadi gitu.</div>
+      </div>
+    </div>
+    <div class="img2">
+      <img src="/aset/cloud2.png" alt="cloud" />
+      <!--todo /webBlog/aset/cloud2.png -->
+    </div>
+    <div data-aos="fade-up" data-aos-offset="200" class="content-info">
       <h2 class="font-card">Kami mendapatkan Materi</h2>
       <span class="text-success info-card">
-      <h1>Dari sumber yang terpercaya.</h1>
-      <h2>Mengunakan <span class="text-bold-white">class name</span></h2>
-      <h2 class="text-bold">
-        Semantic CSS.</h2>
+        <h1>Dari sumber yang terpercaya.</h1>
+        <h2>Mengunakan <span class="text-bold-white">class name</span></h2>
+        <h2 class="text-bold">Semantic CSS.</h2>
       </span>
       <div class="cool-face">
-        <img loading="lazy" src="https://img.daisyui.com/images/emoji/smiling-face-with-sunglasses.webp" alt="face-cool">
+        <img
+          loading="lazy"
+          src="https://img.daisyui.com/images/emoji/smiling-face-with-sunglasses.webp"
+          alt="face-cool"
+        />
       </div>
-    </div> 
+      <span class="center-text"
+        >like the design ,clear design and faster load.</span
+      >
+    </div>
+    <div
+      class="hero min-h-screen hero-img"
+      style="background-image: url(/aset/Rapat3.jpg)"
+    >
+      <div class="hero-overlay"></div>
+      <div class="hero-content text-neutral-content text-center">
+        <div class="max-w-md">
+          <h1 class="mb-5 text-5xl font-bold">Awig Awig Di Desa Adat</h1>
+          <p class="mb-5">
+            wig-awig adalah aturan yang dibuat oleh krama Desa Adat dan atau Krama Banjar Adayang berfungsi sebagai pedoman dalam pelaksanaan Tri Hita Karana
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="card-1">
+    <center>
+    <div class="card w-5/8 bg-base-100 card-xs shadow-sm">
+      <div class="card-body">
+        <h2 class="card-title">Awig-awig </h2>
+        <p>aturan yang dibuat oleh krama Desa Adat dan atau Krama Banjar Adat yang berfungsi sebagai pedoman dalam pelaksanaan Tri Hita Karana yakni (Parahyangan), (Pawongan) dan (Palemahan). Dengan demikian awig-awig merupakan hukum adat yang berfungsi untuk mengatur kehidupan masyarakat Desa Adat guna terciptanya ketertiban, ketentraman dan kedamaian, serta rasa keadilan dalam masyarakat Desa Adat. Sehingga awig-awig sangat ditaati secara turun temurun oleh krama Desa Adat di Bali.</p>
+        <div class="justify-end card-actions">
+        </div>
+      </div>
+    </div>
+  </center>
+</div>
+    <div class="card-2"><center>
+      <div class="card bg-base-100 w-96 shadow-sm">
+        <figure>
+          <img
+            src="/aset/Rapat1.jpg"
+            alt="Rapat1" />
+        </figure>
+      </center>
+    </div>
+    <div class="card-2"><center>
+      <div class="card bg-base-100 w-96 shadow-sm">
+        <figure>
+          <img
+            src="/aset/Rapat3.jpg"
+            alt="Rapat1" />
+        </figure>
+      </center>
+    </div>
+    <div class="card-1">
+      <center>
+      <div class="card bg-base-100 card-xs shadow-sm">
+        <div class="card-body">
+          <p>Pada dasarnya awig-awig itu memuat hak dan kewajiban warga desa adat, apabila hal itu dilanggar akan ada reaksi dari masyarakat yang bersangkutan yang sudah barang tentu dilaksanakan oleh prajuru desa adat yang diberikan kewenangan sebagai pengatur keseimbangan hidup dalam masyarakat. Di dalam Awig-awig Desa inilah terdapat perbuatan-perbuatan yang wajib dilakukan dan perbuatan perbuatan yang dilarang.</p>
+          <div class="justify-end card-actions">
+          </div>
+        </div>
+      </div>
+    </center>
+  </div>
+  <div class="card-2"><center>
+    <div class="card bg-base-100 w-96 shadow-sm">
+      <figure>
+        <img
+          src="/aset/Rapat5.jpg"
+          alt="Rapat1" />
+      </figure>
+    </center>
+    <footer class="footer-card">
+      <footer class="footer footer-horizontal footer-center bg-base-200 text-base-content rounded p-10">
+        <nav class="grid grid-flow-col gap-4">
+          <a class="link link-hover">About</a>
+          <a class="link link-hover">Quiz</a>
+          <a class="link link-hover">Github</a>
+        </nav>
+        <nav>
+          <div class="grid grid-flow-col gap-4">
+            <a>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                class="fill-current">
+                <path
+                  d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path>
+              </svg>
+            </a>
+            <a>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                class="fill-current">
+                <path
+                  d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"></path>
+              </svg>
+            </a>
+            <a>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                class="fill-current">
+                <path
+                  d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"></path>
+              </svg>
+            </a>
+          </div>
+        </nav>
+        <aside>
+          <p>Copyright © ISAKA & DWIK </p>
+        </aside>
+      </footer>
+    </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script>
       AOS.init();

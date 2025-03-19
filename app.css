@@ -1,0 +1,229 @@
+@font-face {
+  font-family: "Poppins";
+  src: url("fonts/Poppins-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("fonts/Poppins-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+.drawer {
+  display: none;
+  display: none;
+}
+
+body {
+    overflow: hidden;
+}
+
+
+.dificulty {
+    justify-content: center;
+    justify-self: center;
+    margin-top: 5%;
+    animation: up 3s ease-in-out;
+    -webkit-animation: up 3s ease-in-out;
+}
+
+.center-text {
+  display: flex;
+  font-size: 30px;
+  justify-content: center;
+  align-items: center;
+  animation: up 3s ease-in-out;
+  -webkit-animation: up 3s ease-in-out;
+}
+
+.Welcome-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10%;
+  animation: fade 3s ease-in-out;
+  -webkit-animation: fade 3s ease-in-out;
+}
+
+.sleepy-emoji {
+  margin-left: 65%;
+  width: 75px;
+  margin-top: -3%;
+  animation: up 3s ease-in-out;
+  -webkit-animation: up 3s ease-in-out;
+}
+
+.feel-emoji {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  animation: up 3s ease-in-out;
+  -webkit-animation: up 3s ease-in-out;
+}
+
+@keyframes rainbow {
+  0%{
+    opacity: 0;
+    color: #393232;
+  }
+  20%{
+    opacity: 1;
+    color: #e48257;
+  }
+  40%{
+    opacity: 1;
+    color: #f2edd7;
+  }
+  60%{
+    opacity: 1;
+    color: #3a6351;
+  }
+  80%{
+    opacity: 1;
+    color: #393232;
+  }
+  100%{
+    opacity: 0;
+    color: #e48257;
+  }
+}
+
+.input {
+  justify-content: center;
+  justify-self: center;
+  align-self: center;
+  margin-top: 5%;
+  animation: up 3s ease-in-out;
+  -webkit-animation: up 3s ease-in-out;
+}
+
+.soal {
+  justify-content: center;
+  justify-self: center;
+  color: white;
+  background-color: #3a6351;
+  font-size: 30px;
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 30px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  animation: typing 3s ease-in-out;
+  -webkit-animation: typing 3s ease-in-out;
+}
+
+.navMedia {
+  display: none;
+}
+
+.hasil {
+  margin-left: 25%;
+  margin-top: 50px;
+  font-size: 30px;
+}
+
+.quizku {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%;
+  animation: fade 3s ease-in-out;
+  -webkit-animation: typing 3s ease-in-out;
+  font-size: 40px;
+  font-weight: 500;
+}
+
+.emoji {
+  position: absolute;
+  margin-left: 70%;
+  margin-top: -15%;
+  width: 70px;
+  animation: typing 3s ease-in-out;
+  -webkit-animation: typing 3s ease-in-out;
+}
+
+@media screen and (max-width: 768px) {
+
+
+  .navMedia {
+    display: block;
+    
+  }
+
+    .dificulty {
+      animation: up 3s ease-in-out;
+      -webkit-animation: up 3s ease-in-out;
+    }
+
+    .container-self {
+      display: none;
+    }
+
+    .drawer {
+      display: block;
+      margin-left: 20px;
+      margin-top: 20px;
+    }
+
+    .Welcome-text {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 50%;
+    }
+
+    .center-text {
+      display: flex;
+      font-size: 20px;
+      font-weight: 400;
+      justify-content: center;
+      align-items: center;
+      margin-left: 20px;
+    }
+
+    .sleepy-emoji {
+      margin-left: 77%;
+      margin-top: -35px;
+      width: 50px;
+    }
+
+    .input {
+      margin-top: 10%;
+    }
+    
+    .soal {
+      max-width: 100%;
+      margin-top: 50%;
+    }
+
+    .quizku {
+      display: flex;
+      max-width: 70%;
+      margin-top: 20%;
+      justify-content: center;
+      justify-self: center;
+      align-items: center;
+      align-self: center;
+    }
+
+    .emoji{
+      margin-top: -20%;
+      margin-right: 60%;
+    }
+
+    .soal {
+      position: fixed;
+      margin-top: 20px;
+    }
+
+    .input {
+      margin-top: 70%;
+    }
+
+}
